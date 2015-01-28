@@ -1,0 +1,13 @@
+{
+  "name": "puppetfinland-choco",
+  "version": "0.1.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup Chocolatey",
+  "source": "https://github.com/Puppet-Finland/choco.git",
+  "project_page": "https://github.com/Puppet-Finland/choco",
+  "dependencies": [
+    { "name": "puppetlabs/powershell", "version_requirement": ">= 1.0.4" },
+    { "name": "puppetfinland/os", "version_requirement": ">= 0.5.3" },
+  ]
+}
