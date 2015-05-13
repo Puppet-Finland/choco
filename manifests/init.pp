@@ -24,6 +24,6 @@ class choco
 {
 
 if $manage == 'yes' {
-    include choco::install
+    include ::choco::install
 }
 }
