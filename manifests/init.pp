@@ -6,7 +6,7 @@
 # == Parameters
 #
 # [*manage*]
-#   Manage Chocolatey using this module. Valid values 'yes' (default) and 'no'. 
+#   Manage Chocolatey using this module. Valid values true (default) and false.
 #
 # == Authors
 #
@@ -18,12 +18,12 @@
 #
 class choco
 (
-    $manage = 'yes'
+    Boolean $manage = true
 
 ) inherits choco::params
 {
 
-if $manage == 'yes' {
+if $manage {
     include ::choco::install
 }
 }
